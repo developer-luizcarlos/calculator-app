@@ -12,8 +12,12 @@ html {
   width: 100vw;
 }
 
-body {
+
+.calculator {
+  background-color: var(--main-background);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
