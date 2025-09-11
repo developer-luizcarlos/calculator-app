@@ -1,3 +1,4 @@
+import ThemeProvider from "@/context/ThemeProvider";
 import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import "./globals.css";
@@ -20,7 +21,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${leagueSpartan.className}`}>{children}</body>
+      <body className={`${leagueSpartan.className}`}>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 };
