@@ -1,0 +1,11 @@
+.calculator__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-theme-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
