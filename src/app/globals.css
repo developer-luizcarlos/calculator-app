@@ -29,18 +29,6 @@ html {
   max-width: 600px;
 }
 
-.calculator__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.toggle-theme-container {
-  display: flex;
-  align-items: flex-end;
-  gap: 20px;
-}
-
 .title-sm {
   color: var(--generic-color);
   font-size: 0.90rem;
