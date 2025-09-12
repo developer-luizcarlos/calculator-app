@@ -4,6 +4,7 @@ import { ThemeContext } from "@/context/ThemeProvider";
 import { ThemeContextType } from "@/types/Theme";
 import { useContext } from "react";
 
+import Screen from "@/components/Screen/Screen";
 import Toggle from "@/components/Toggle/Toggle";
 
 const Home: React.FC = () => {
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
             <Toggle />
           </div>
         </header>
+        <Screen value={0} />
       </div>
     </div>
   );
