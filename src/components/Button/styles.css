@@ -1,0 +1,58 @@
+:root {
+  --background: var(--key-number-background);
+  --color: var(--key-number-color);
+  --shadow: var(--key-number-shadow);
+}
+
+.btn.btn--numeric {
+  --background: var(--key-number-background);
+  --color: var(--key-number-color);
+  --shadow: var(--key-number-shadow);
+}
+
+.btn.btn--operator {
+  --background: var(--key-number-background);
+  --color: var(--key-number-color);
+  --shadow: var(--key-number-shadow);
+}
+
+.btn.btn--delete {
+  --background: var(--key-operator-background);
+  --color: var(--key-operator-color);
+  --shadow: var(--key-operator-shadow);
+}
+
+.btn.btn--reset {
+  --background: var(--key-operator-background);
+  --color: var(--key-operator-color);
+  --shadow: var(--key-operator-shadow);
+}
+
+.btn.btn--result {
+  --background: var(--key-result-background);
+  --color: var(--key-result-color);
+  --shadow: var(--key-result-shadow);
+}
+
+.btn.btn--delete,
+.btn.btn--reset {
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: var(--background);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 1px var(--shadow);
+  cursor: pointer;
+  color: var(--color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  height: 45px;
+  width: 100%;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
