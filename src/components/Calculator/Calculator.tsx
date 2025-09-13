@@ -19,6 +19,10 @@ const Calculator: React.FC = () => {
       <div className="calculator__body">
         <Header />
         <Screen value={0} />
+        <div className="calculator__keypad">
+          <div className="keypad__num-keys-container"></div>
+          <div className="keypad__calc-state-btns-container"></div>
+        </div>
       </div>
     </div>
   );
