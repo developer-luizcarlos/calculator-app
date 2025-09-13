@@ -12,11 +12,13 @@
 }
 
 .calculator__body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   row-gap: var(--gap);
   width: 70vw;
-  min-width: 450px;
-  max-width: 600px;
+  min-width: 400px;
+  max-width: 500px;
 }
 
 .calculator__keypad {
@@ -25,6 +27,7 @@
   display: grid;
   gap: var(--gap);
   padding: 2rem;
+  width: 100%;
 }
 
 .keypad__num-keys-container {
