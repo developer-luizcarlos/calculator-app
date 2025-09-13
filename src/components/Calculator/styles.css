@@ -1,3 +1,7 @@
+:root {
+  --gap: 20px;
+}
+
 .calculator {
   background-color: var(--main-background);
   display: flex;
@@ -9,7 +13,7 @@
 
 .calculator__body {
   display: grid;
-  row-gap: 20px;
+  row-gap: var(--gap);
   width: 70vw;
   min-width: 450px;
   max-width: 600px;
@@ -19,7 +23,7 @@
   background-color: var(--keypad-background);
   border-radius: 5px;
   display: grid;
-  gap: 15px 0;
+  gap: var(--gap);
   padding: 2rem;
 }
 
@@ -34,5 +38,5 @@
 .keypad__num-keys-container,
 .keypad__calc-state-btns-container {
   display: grid;
-  gap: 15px 10px;
+  gap: var(--gap);
 }
