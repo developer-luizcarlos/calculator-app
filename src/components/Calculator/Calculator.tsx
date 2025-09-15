@@ -33,6 +33,15 @@ const Calculator: React.FC = () => {
     }
   };
 
+  const deleteValue = () =>
+    setExpression((exp) => {
+      const newValueWithoutLastChar = exp.slice(0, exp.length - 1);
+
+      return isEmptyString(newValueWithoutLastChar)
+        ? "0"
+        : newValueWithoutLastChar;
+    });
+
   return (
     <div className={`calculator ${themeClassName}`}>
       <div className="calculator__body">
@@ -55,7 +64,7 @@ const Calculator: React.FC = () => {
               type="Numeric"
               onClick={() => addValue("9", "Numeric")}
             />
-            <Button title="del" type="Delete" onClick={() => ""} />
+            <Button title="del" type="Delete" onClick={deleteValue} />
             <Button
               title="4"
               type="Numeric"
