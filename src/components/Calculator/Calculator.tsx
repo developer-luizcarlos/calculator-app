@@ -42,6 +42,8 @@ const Calculator: React.FC = () => {
         : newValueWithoutLastChar;
     });
 
+  const resetValue = () => setExpression("0");
+
   return (
     <div className={`calculator ${themeClassName}`}>
       <div className="calculator__body">
@@ -127,7 +129,7 @@ const Calculator: React.FC = () => {
             />
           </div>
           <div className="keypad__calc-state-btns-container">
-            <Button title="reset" type="Reset" onClick={() => ""} />
+            <Button title="reset" type="Reset" onClick={resetValue} />
             <Button title="=" type="Result" onClick={() => ""} />
           </div>
         </div>
